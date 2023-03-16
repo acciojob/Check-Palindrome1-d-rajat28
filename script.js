@@ -1,12 +1,15 @@
 // complete the given function
 
 function palindrome(str){
-var j = str.length-1;
-	for(var i = 0; i < j/2; i++){
-		if(str[i] != str[j-i]){
-			return false;
-		}
+var rev_str = "";
+      for( var i = str.length-1 ;i >= 0 ;i--)
+      {
+        rev_str+= str[i];
+      }
+	if(str == rev_str){
+		return true;
+	}else{
+		return false;
 	}
-	return true;
 }
 module.exports = palindrome
