@@ -6,10 +6,10 @@ var rev_str = "";
       {
         rev_str+= str[i];
       }
-	if(str == rev_str){
-		return "true";
+	if(str === rev_str){
+		return true;
 	}else{
-		return "false";
+		return  false;
 	}
 }
 module.exports = palindrome
