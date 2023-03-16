@@ -1,14 +1,11 @@
 // complete the given function
 
 function palindrome(str){
-var l = 0;
-var r = str.length-1;
-	while(l < r){
-		if(str[l] != str[r]){
+var j = str.length-1;
+	for(var i = 0; i < j/2; i++){
+		if(str[i] != str[j-i]){
 			return false;
 		}
-		l++;
-		r--;
 	}
 	return true;
 }
