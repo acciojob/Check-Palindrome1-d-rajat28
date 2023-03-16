@@ -7,9 +7,9 @@ var rev_str = "";
         rev_str+= str[i];
       }
 	if(str == rev_str){
-		return true;
+		return "true";
 	}else{
-		return false;
+		return "false";
 	}
 }
 module.exports = palindrome
